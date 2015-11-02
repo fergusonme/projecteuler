@@ -15,7 +15,7 @@ def is_prime(n):
 def main(test_number):
   prime_factors = []
   i = 2
-  while i < test_number + 1:
+  while i <= test_number:
     if test_number%i == 0:  #check if i is a factor for the number
       if is_prime(i):       #check if i is a prime number
         prime_factors.append(i)   #i is a prime factor, add to our array and factor the number
@@ -25,6 +25,6 @@ def main(test_number):
       i += 1 
   return prime_factors
   
-print main(number)
+#print main(number)
 
 #answer = 6857
