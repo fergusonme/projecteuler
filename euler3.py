@@ -4,13 +4,20 @@
 
 number = 600851475143
 example = 13195
+
+import math
   
 #test if a number is prime or not  
 def is_prime(n):
-  for i in range(2, n):
+  if n == 1:
+    return False
+  elif n == 2:
+    return True
+  max = int(math.floor(math.sqrt(n)))
+  for i in range(2,max+1):
     if n % i == 0:
       return False
-  return True   
+  return True    
 
 def main(test_number):
   prime_factors = []
