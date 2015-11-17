@@ -9,9 +9,6 @@
 # Find the product abc.
 #
 
-from functools import reduce
-import operator
-
 sum = 1000
 
 potentialtriplets = [[a, b] for a in range(1,sum) for b in range(1,sum)
